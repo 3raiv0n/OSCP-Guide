@@ -1,0 +1,24 @@
+host -t ns website.com #lists all name servers for the website.com
+host -t mx website.com #lists all mail servers for the website.com
+
+host -a 		#is equivalent to -v -t ANY
+host -A 		#is like -a but omits RRSIG, NSEC, NSEC3
+host -c 		#specifies query class for non-IN data
+host -C 		#compares SOA records on authoritative nameservers
+host -d 		#is equivalent to -v
+host -l 		#lists all hosts in a domain, using AXFR
+host -m 		#set memory debugging flag (trace|record|usage)
+host -N 		#changes the number of dots allowed before root lookup is done
+host -p 		#specifies the port on the server to query
+host -r 		#disables recursive processing
+host -R 		#specifies number of retries for UDP packets
+host -s 		#a SERVFAIL response should stop query
+host -t 		#specifies the query type
+host -T 		#enables TCP/IP mode
+host -U 		#enables UDP mode
+host -v 		#enables verbose output
+host -V 		#print version number and exit
+host -w 		#specifies to wait forever for a reply
+host -W 		#specifies how long to wait for a reply
+host -4 		#use IPv4 query transport only
+host -6 		#use IPv6 query transport only
