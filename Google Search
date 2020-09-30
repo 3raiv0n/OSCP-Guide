@@ -1,0 +1,8 @@
+site:microsoft.com #search only in microsoft.com and its subdomains
+-site:www.microsoft.com #exclude www.microsoft.com but still search its subdomains
+filetype:pdf #search for only PDF files
+site:microsoft.com filetype:pdf "penetration testing" #search for PDF files with content "penetration testing" in the microsoft.com domain
+intitle:"VNC viewer for Java" #all the pages with title which exposes VNC services facing internet (vulnerability)
+inurl:"/control/userimage.html" #search mobotic webcams in the internet (vulnerability)
+intitle:"phpmyadmin" #exposed php admin page
+intitle:"-N3t" filetype:php undetectable #php backdoor -N3t infected websites
