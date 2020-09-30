@@ -1,0 +1,11 @@
+onesixtyone 								#onesixtyone 192.168.4.0/24 public 
+
+onesixtyone -c <communityfile> 				#file with community names to try, onesixtyone -c dict.txt -i hosts -o my.log -w 100
+onesixtyone -i <inputfile>     				#file with target hosts
+onesixtyone -o <outputfile>    				#output log
+onesixtyone -port                 			#specify an alternate destination SNMP port
+onesixtyone -d        						#debug mode, use twice for more information
+
+onesixtyone -s   			              	#short mode, only print IP addresses
+onesixtyone -w n               				#wait n milliseconds (1/1000 of a second) between sending packets (default 10)
+onesixtyone -q                 				#quiet mode, do not print log to stdout, use with -l

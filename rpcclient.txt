@@ -1,0 +1,5 @@
+rpcclient -U "" a.b.c.d #attempt to login
+
+srvinfo					#further identify OS version
+enumdomusers			#users defined on server
+getdompwinfo			#SMB password policy configured for the server

@@ -1,0 +1,16 @@
+VRFY userA #verify user named userA, successful response: 250 2.1.5 <user id>, unsuccessful response: 550 5.1.1 <userid> User unknown
+EXPN userA #verif user named userA, successful response: 250  <user id>
+
+DATA				#Define the following information as data.	
+EXPN				#Verify if a mailbox exists on the local host.
+HELO				#Identify the domain name of the sending host to SMTP.	
+HELP				#Get help with SMTP commands.	
+MAIL FROM			#Specify the sender of the mail.	
+NOOP				#Return a 250 OK return code when SMTP is responding.	
+QUEU				#Get information about mail queued at SMTP for delivery
+QUIT				#End an SMTP connection.	
+RCPT TO				#Specify the recipients of the mail.
+RSET				#Reset the SMTP connection to the initial state.
+TICK				#Insert an identifier into the batch SMTP response data set.
+VERB				#Enable or disable verbose mode. Can cause spool problems for SMTP if the REPLY TO: user is not a valid NJE node user.
+VRFY				#Verify if a mailbox exists on the local host.	

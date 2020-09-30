@@ -1,0 +1,1 @@
+ls -l /usr/share/nmap/scripts/ | grep smb #lists all nmap smb scripts

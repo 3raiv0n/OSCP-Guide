@@ -1,0 +1,3 @@
+#32bit
+#i686-w64-mingw32-gcc -o test.exe test.c
+#x86_64-w64-mingw32-gcc -o test.exe test.c

