@@ -11,4 +11,3 @@
 #sudo gvm-feed-update
 #or
 #sudo gvm-start
-#acc8373a-70bb-4796-bbb7-82f013a5b3f0
